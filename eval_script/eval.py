@@ -100,7 +100,7 @@ def cat_best_hmean(gt, predictions, thresholds):
     precisions = tp / np.maximum(tp + fp, np.finfo(np.float64).eps) * 100
     f_measures = 2 * precisions * recalls / (precisions + recalls + 1e-6)
 
-    best_i = np.argmax(hmeans)
+    best_i = np.argmax(f_measures)
 
     print('Precision: {:.2f}, Recall: {:.2f}, F-measure: {:.2f}, 1-NED: {:.2f}'.format(
         precisions[best_i, 0], recalls[best_i, 0], f_measures[best_i, 0], ned[best_i, 0]))
