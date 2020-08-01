@@ -59,7 +59,7 @@ Best score threshold: 0.5691
 ```
 Here, 1-NED is a metric for text recognition, which can be formulated as:
 <div align="center">
-  <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/1_ned.png", width="300">
+  <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/1_ned.gif", width="300">
 </div>
 <p align="center">
   Eqn. 1: $N_{FP}$, $N_{TP}$ and $N_{GT}$ mean the number of false-positive, true-positive and ground-truth text lines, respectively. $S_i$ and $\hat{S}_i$ represent predicted transcription and ground-truth transcription, respectively.
