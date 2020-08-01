@@ -37,7 +37,7 @@ RECTS_ROOT
 ```
 
 ## Submission Format
-A json file that includes the prediction of all images (an example "eval_script/example_pred.json")
+A json file that includes the prediction of all images. Here is an [example submission](https://github.com/whai362/TDA-ReCTS/blob/master/eval_script/example_pred.json).
 ```
 [{"img_name": "train_ReCTS_001213.jpg", 
   "points": [[[x_00, y_00], [x_01, y_01],..., [x_0n, y_0n]], 
