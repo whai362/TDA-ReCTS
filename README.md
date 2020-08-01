@@ -5,10 +5,10 @@ TDA-ReCTS is a validation set for benchmarking text detection ambiguity,
 which contains 1,000 ambiguous images selected from the training set of [IC19-
 ReCTS](https://rrc.cvc.uab.es/?ch=12).
 
-The repository includes TDA-ReCTS's training list, validation list, and evaluation script.
+This repository includes TDA-ReCTS's training list, validation list, and evaluation script.
 
 <div align="center">
-  <img src="https://github.com/whai362/TDA-ReCTS/images/examples.png">
+  <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/examples.png">
 </div>
 <p align="center">
   Figure 1: Some exmaples in validation list.
@@ -38,7 +38,7 @@ RECTS_ROOT
 
 ## Submission Format
 A json file that includes the prediction of all images (an example "eval_script/example_pred.json")
-```json
+```
 [{"img_name": "train_ReCTS_001213.jpg", 
   "points": [[[x_00, y_00], [x_01, y_01],..., [x_0n, y_0n]], 
              [[x_11, y_11], [x_12, y_11],..., [x_1n, y_1n]],
