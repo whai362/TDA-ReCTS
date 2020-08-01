@@ -52,15 +52,16 @@ A json file that includes the prediction of all images (an example "eval_script/
 ```shell script
 python eval_script/eval.py --gt eval_script/val_gt.zip --pred eval_script/example_pred.json
 ```
-The output should be:
+This evaluation script based on that of [BDD100K](https://github.com/ucbdrive/bdd100k/blob/master/bdd100k/evaluate.py).
+The output of the evaluation script should be:
 ```
 Precision: 84.79, Recall: 78.16, F-measure: 81.34, 1-NED: 51.08
 Best score threshold: 0.5691
 ```
-Here, the 1-NED could be formulated as:
+Here, 1-NED is a metric for text recognition, which can be formulated as:
 <div align="center">
   <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/1_ned.png", width="300">
 </div>
 <p align="center">
-  Eqn. 1: $N_{FP}$, $N_{TP}$ and $N_{GT}$ mean the number of false-positive, true-positive and ground-truth text lines, respectively. $S_i$ and $S_i$ represent predicted transcription and ground-truth transcription, respectively.
+  Eqn. 1: $N_{FP}$, $N_{TP}$ and $N_{GT}$ mean the number of false-positive, true-positive and ground-truth text lines, respectively. $S_i$ and $\hat{S}_i$ represent predicted transcription and ground-truth transcription, respectively.
 </p> 
