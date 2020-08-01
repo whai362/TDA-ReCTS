@@ -59,7 +59,7 @@ Best score threshold: 0.5691
 ```
 Here, the 1-NED could be formulated as:
 <div align="center">
-  <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/1-ned.png">
+  <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/1_ned.png">
 </div>
 <p align="center">
   Eqn. 1: $N_{FP}$, $N_{TP}$ and $N_{GT}$ mean the number of false-positive, true-positive and ground-truth text lines, respectively. $S_i$ and $S_i$ represent predicted transcription and ground-truth transcription, respectively.
