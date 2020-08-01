@@ -7,7 +7,7 @@ ReCTS](https://rrc.cvc.uab.es/?ch=12).
 
 This repository includes TDA-ReCTS's training list, validation list, and evaluation script.
 
-<div align="center">
+<div align="center" width="500" height="313">
   <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/examples.png">
 </div>
 <p align="center">
