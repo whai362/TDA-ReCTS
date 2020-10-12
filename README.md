@@ -64,3 +64,14 @@ Here, 1-NED is a metric for text recognition, which can be formulated as:
 <p align="center">
   Eqn. 1: $N_{FP}$, $N_{TP}$ and $N_{GT}$ mean the number of false-positive, true-positive and ground-truth text lines, respectively. $S_i$ and $\hat{S}_i$ represent predicted transcription and ground-truth transcription, respectively.
 </p> 
+
+## Citation
+If you use this work in your research, please cite us.
+```
+@inproceedings{wenhai2020ae,
+  title={AE TextSpotter: Learning Visual and Linguistic Representation for Ambiguous Text Spotting},
+  author={Wang, Wenhai and Liu, Xuebo and Ji, Xiaozhong and Xie, Enze and Liang, Ding and Yang, ZhiBo and Lu, Tong and Shen, Chunhua and Luo, Ping},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2020}
+}
+```
