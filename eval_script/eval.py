@@ -94,17 +94,21 @@ def cat_best_hmean(gt, predictions, thresholds):
     # compute precision recall
     fp = np.cumsum(fp, axis=0)
     tp = np.cumsum(tp, axis=0)
-    ned = np.cumsum(ned, axis=0) / (fp + num_gts + np.finfo(np.float64).eps) * 100
+    ned = np.cumsum(ned, axis=0) / (fp + num_gts + np.finfo(np.float64).eps)
 
-    recalls = tp / float(num_gts) * 100
-    precisions = tp / np.maximum(tp + fp, np.finfo(np.float64).eps) * 100
-    f_measures = 2 * precisions * recalls / (precisions + recalls + 1e-6)
+    recalls = tp / float(num_gts)
+    precisions = tp / np.maximum(tp + fp, np.finfo(np.float64).eps)
+    fmeasures = 2 * precisions * recalls / (precisions + recalls + 1e-6)
 
-    best_i = np.argmax(f_measures)
+    best_i = np.argmax(fmeasures)
+    print('[Best F-Measure] p: {:.2f}, r: {:.2f}, f: {:.2f}, 1-ned: {:.2f}, best_score_th: {:.3f}'.format(
+        float(precisions[best_i]) * 100, float(recalls[best_i]) * 100, float(fmeasures[best_i]) * 100,
+        float(ned[best_i]) * 100, predictions[best_i]['score']))
 
-    print('Precision: {:.2f}, Recall: {:.2f}, F-measure: {:.2f}, 1-NED: {:.2f}'.format(
-        precisions[best_i, 0], recalls[best_i, 0], f_measures[best_i, 0], ned[best_i, 0]))
-    print('Best score threshold: {:.4f}'.format(predictions[best_i]['score']))
+    best_i = np.argmax(ned)
+    print('[Best 1-NED]     p: {:.2f}, r: {:.2f}, f: {:.2f}, 1-ned: {:.2f}, best_score_th: {:.3f}'.format(
+        float(precisions[best_i]) * 100, float(recalls[best_i]) * 100, float(fmeasures[best_i]) * 100,
+        float(ned[best_i]) * 100, predictions[best_i]['score']))
 
 
 def trans_pred_format(pred):

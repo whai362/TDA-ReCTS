@@ -54,8 +54,8 @@ python eval_script/eval.py --gt eval_script/val_gt.zip --pred eval_script/exampl
 This evaluation script based on that of [BDD100K](https://github.com/ucbdrive/bdd100k/blob/master/bdd100k/evaluate.py).
 The output of the evaluation script should be:
 ```
-Precision: 84.79, Recall: 78.16, F-measure: 81.34, 1-NED: 51.08
-Best score threshold: 0.5691
+[Best F-Measure] p: 84.79, r: 78.16, f: 81.34, 1-ned: 51.08, best_score_th: 0.569
+[Best 1-NED]     p: 86.55, r: 76.32, f: 81.11, 1-ned: 51.60, best_score_th: 0.626
 ```
 Here, 1-NED is a metric for text recognition, which can be formulated as:
 <div align="center">
