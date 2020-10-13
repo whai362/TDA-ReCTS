@@ -5,6 +5,7 @@ TDA-ReCTS is a validation set for benchmarking text detection ambiguity,
 which contains 1,000 ambiguous images selected from the training set of [ICDAR 2019 ReCTS](https://rrc.cvc.uab.es/?ch=12).
 
 This repository includes TDA-ReCTS's training list, validation list, and evaluation script.
+The code of AE TextSpotter is released at https://github.com/whai362/AE_TextSpotter.
 
 <div align="center">
   <img src="https://github.com/whai362/TDA-ReCTS/blob/master/images/examples.png" width="600">
